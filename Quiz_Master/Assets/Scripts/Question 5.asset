@@ -13,3 +13,9 @@ MonoBehaviour:
   m_Name: Question 5
   m_EditorClassIdentifier: 
   question: What is Thanos seeking during the Infinity Saga?
+  answers:
+  - Infinite Equation
+  - Casket of Ancient Winters
+  - Infinity Cubes
+  - Infinity Stones
+  correctAnswerIndex: 3

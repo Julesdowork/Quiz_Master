@@ -13,3 +13,9 @@ MonoBehaviour:
   m_Name: Question 2
   m_EditorClassIdentifier: 
   question: Who plays Captain Marvel in the MCU?
+  answers:
+  - Alexandra Daddario
+  - Brie Larson
+  - Charlize Theron
+  - Teyonah Parris
+  correctAnswerIndex: 1

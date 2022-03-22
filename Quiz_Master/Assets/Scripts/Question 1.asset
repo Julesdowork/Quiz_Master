@@ -13,3 +13,9 @@ MonoBehaviour:
   m_Name: Question 1
   m_EditorClassIdentifier: 
   question: What is Iron Man's name?
+  answers:
+  - Anthony Starr
+  - Ted Kord
+  - Tony Stark
+  - Howard Stark
+  correctAnswerIndex: 2

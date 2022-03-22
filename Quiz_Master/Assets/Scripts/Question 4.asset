@@ -13,3 +13,9 @@ MonoBehaviour:
   m_Name: Question 4
   m_EditorClassIdentifier: 
   question: Who is Clint Barton's partner in <i>Hawkeye</i>?
+  answers:
+  - Leopold Fitz
+  - Kate Bishop
+  - Natasha Romanoff
+  - Yelena Belova
+  correctAnswerIndex: 1
