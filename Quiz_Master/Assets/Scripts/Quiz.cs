@@ -32,7 +32,7 @@ public class Quiz : MonoBehaviour
     public bool isComplete;
     [SerializeField] Slider progressBar;
     
-    void Start()
+    void Awake()
     {
         timer = FindObjectOfType<Timer>();
         scoreKeeper = FindObjectOfType<ScoreKeeper>();
@@ -43,8 +43,15 @@ public class Quiz : MonoBehaviour
     void Update()
     {
         timerImage.fillAmount = timer.fillFraction;
+
         if (timer.loadNextQuestion)
         {
+            if (progressBar.value == progressBar.maxValue)
+            {
+                isComplete = true;
+                return;
+            }
+            
             hasAnsweredEarly = false;
             GetNextQuestion();
             timer.loadNextQuestion = false;
@@ -95,9 +102,6 @@ public class Quiz : MonoBehaviour
         SetButtonState(false);
         timer.CancelTimer();
         scoreText.text = "Score: " + scoreKeeper.CalculateScore() + "%";
-
-        if (progressBar.value == progressBar.maxValue)
-            isComplete = true;
     }
 
     private void SetButtonState(bool state)
